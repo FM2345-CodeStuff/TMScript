@@ -1,3 +1,8 @@
+function showTextAsParagraph(text) {
+    const outputParagraph = document.getElementById('outputParagraph');
+    outputParagraph.innerHTML = "<p>" + text + "</p>";
+}
+
 function updateOutput(output) {
     const outputFrame = document.getElementById('outputFrame');
     const outputDocument = outputFrame.contentWindow.document;
