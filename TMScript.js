@@ -1,3 +1,9 @@
+function updateOutput(output) {
+    const outputFrame = document.getElementById('outputFrame');
+    const outputDocument = outputFrame.contentWindow.document;
+    outputDocument.body.innerHTML = output;
+}
+
 console.log("Welcome to TMScript Compiler.");
 console.log(" ");
 const input_command = prompt('Write a command (write_text for example): ');
